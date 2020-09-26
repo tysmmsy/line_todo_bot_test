@@ -1,24 +1,8 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### LINEで管理するTodo bot  
+2020/09/26~  
+paizaの息抜きにLINEを利用したTodoアプリを作ることにした。  
+やり方は図書通りで今の所問題はないが、コードを組む順番に違和感を感じる。  
+今まで DB作成→ルーティングの設定→コントローラー作成→ビューファイルの編集 という手順で都度データの流れを確認してきたが、今回は逆の順番で進んでいた。  
+現場ではフロントエンド、サーバーサイドで分担するから別れているのだろうか。   
+今までと違うやり方を通しで経験してみて都度READMEに感じたことを更新していこうと思う。  
+PRを分けすぎてしまったので、次からはまとめる。  
