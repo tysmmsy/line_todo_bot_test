@@ -3,6 +3,10 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
+  def edit
+    @task = Task.find(params[:id])
+  end
+
   def delete
     task = Task.find(params[:id])
     if task.destroy
