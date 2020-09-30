@@ -5,16 +5,18 @@
   </tr>
   </thead>
   <tbody>
-  <% @tasks.each do |task| %>
-    <tr>
-      <td><%= task.task %></td>
-      <td>
-        <%= link_to '編集', task_edit_path(task) %>
-      </td>
-      <td>
-        <%= link_to '削除', task_delete_path(task),
-            method: :delete,
-            data: {confirm: '本当に削除しますか？'} %>
-      </td>
-    </tr>
-  <% end %>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.task %></td>
+        <td>
+          <%= link_to '編集', task_edit_path(task) %>
+        </td>
+        <td>
+          <%= link_to '削除', task_delete_path(task),
+              method: :delete,
+              data: {confirm: '本当に削除しますか？'} %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
